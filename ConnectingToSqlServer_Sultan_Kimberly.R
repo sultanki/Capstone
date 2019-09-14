@@ -1,10 +1,10 @@
 ##################################################
 #
-# Author:      	        Kimberly Sultan
+# Author:      	  Kimberly Sultan
 # Date:		        May 3, 2019
 # Subject:      	Capstone_R_Scripts
 # Section:      	SP 02
-# Instructor:   	Prof. Uddin
+# Instructor:   	
 # File Name:    	ConnectingToSqlServer_Sultan_Kimberly.R
 # 
 ##################################################
@@ -26,7 +26,7 @@ con <- dbConnect(odbc(),
                  Database = "WideWorldImportersDW", 
                  Trusted_Connection = "True")
 
-#Create a results object to save sql query results and query 
+#Create a 'results' object to save sql query results and query 
 #Include query here as argument to dbGetQuery()
 
 result <- dbGetQuery(con,'SELECT 
